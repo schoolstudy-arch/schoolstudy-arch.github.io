@@ -1,28 +1,358 @@
+  
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<title>Student Council Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/KRZhUer.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centercenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">
+    	<img src="https://i.imgur.com/iCqyVk3.png" style="width:25px;height:35px;border:0;">
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-child"></i>ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> MEMBERS</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> EVENTS</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-archive"></i>IMPORTANT</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">MEMBERS</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">IMPORTANT</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">GSMST STUDENT COUNCIL</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">MAKE A DIFFERENCE</span>
+  </div> 
+</header>
+
+<!-- Announcements -->
+<div class="w3-container" style="padding:50px 10px">
+  <div class="w3-row-padding">
+  <img src="https://imgur.com/YLCHlrj.png" style="width:95%" class="centercenter">
+      <h1 class="w3-center">...</h1>
+    <div class="w3-col m6">
+    </div>
+  </div>
+</div>
+
+<iframe src="https://calendar.google.com/calendar/embed?src=gsmst.org_gsflfmfjs6p7ea55lcquiv2n1c%40group.calendar.google.com&ctz=America%2FNew_York" class="centercenter  w3-light-grey" style="border: 0; padding:50px 10px" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h1 class="w3-center">ABOUT THE GSMST STUDENT COUNCIL</h1>
+  <h2 class="w3-center">Who are we?</h2>
+  <p class="w3-center">We are an award winning and nationally recognized Student Council of Excellence whose mission is to serve both the student body and the community. We are made up of 26 total members from Exectutives, Seniors, Juniors, Sophomores, and Freshmen!</p>
+  <h2 class="w3-center">What do we do?</h2>
+  <p class="w3-center">We plan and coordinate events through the year and help sponsor other events for groups such as NASH. We also try to improve the livelyhood of the student body by creating recreational events for them to destress and socialize with others!</p>
+  <h2 class="w3-center">Key features of our council</h2>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Community</p>
+      <p>We would love to have your feedback on any events and we will take them and try to improve them in the future! We also love working with the student body and invite them to come help during our workdays!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>We do our best to support the student body with any hardships through our many events that encourage student participation in school events and through morale boosting!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>We always try our best for the school and the student body. We put 100% into every event that we create for the student body! We have a main monthly meeting to discuss an overview of everything and we always try to keep attendance consistant!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Teamwork</p>
+      <p>If student council is a machine then the members are the gears that support eachother and work together to make anything work!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE MEMBERS OF 2019-2020</h3>
+  <p class="w3-center w3-large">Click on the names to go to their respective years!</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+      	<div class="w3-col l3 m6">
+        <img src="https://i.imgur.com/Xp9PdoR.png" alt="John" style="width:90%;height:50%;">
+        <div class="w3-container">
+          <h3 class="center">Executive</h3>
+    </div>
+   </div>
+    	<div class="w3-col l3 m6">
+        <img src="https://i.imgur.com/C9cgVkm.png" alt="Jane" style="width:100%;height:50%;">
+        <div class="w3-container">
+          <h3 class="center">Senior Class</h3>
+      </div>
+    </div>
+      	<div class="w3-col l3 m6">
+        <img src="https://i.imgur.com/0xQ7TV8.png" alt="Mike" style="width:100%;height:50%;">
+        <div class="w3-container">
+          <h3 class="center">Junior Class</h3>
+      </div>
+    </div>
+        <div class="w3-col l3 m6">
+        <img src="https://i.imgur.com/9owtuzy.png" alt="Dan" style="width:100%;height:50%;">
+        <div class="w3-container">
+          <h3 class="center">Sophomore Class</h3>
+     </div>
+   </div>
+   			<div class="w3-col l3 m6">
+         <img src="https://i.imgur.com/AQbCj2j.png" alt="Dan" style="width:100%;height:50%;">
+        <div class="w3-container">
+          <h3 class="center" >Freshman Class</h3>
+     </div>
+     </div>
+     </div>
+
+<!-- Events Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR EVENTS</h3>
+  <p class="w3-center w3-large">Click on the picture to go to that event</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://i.imgur.com/U8WJHqX.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://i.imgur.com/v4AEB6K.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://i.imgur.com/osIr4Xi.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://i.imgur.com/8Msn3kW.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="https://i.imgur.com/e2dGfU6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://i.imgur.com/wSGhFDl.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Current Events Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Current Events</h3>
+      <p>Through these progress bars you are able to see how far we are in to completing these events!</p>
+      <p>These events will be constantly changing so check frequently!</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-flag-checkered w3-margin-right"></i>Event Completion </p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>"Fall Dance Completion"</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:15%">15%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>"Prom Completion"</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:5%">5%</div>
+      </div>
+    </div>
+  </div>
+  <h2 class="w3-center">Countdown until the Fall Dance (October 5, 2019 @ 7:00 P.M.)</h2>
+  <h1 class="w3-center" id="eventtimer"></h1>
+</div>
+
+<!-- Important Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>IMPORTANT MISC (WIP NAME)</h3>
+  <p class="w3-large">Click on the name of the boxes to be redirected there!</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Meeting Minutes</li>
+        <li class="w3-light-grey w3-padding-24">
+          <p>Meeting minutes describe the events of the meetings, the attendees, the issues debated, and decisions for the issues.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Constitution</li>
+        <li class="w3-light-grey w3-padding-24">
+          <p>The constitution for the Gwinnett School of Mathematics, Science, and Technology Student Government Association.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">The StuChive</li>
+        <li class="w3-light-grey w3-padding-24">
+          <p>The StuChive is an archive of all the past student council events including pictures! If you want to check out any old friends or memories go here!</p>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">GASC</li>
+        <li class="w3-light-grey w3-padding-24">
+          <p>The Georgia Association of Student Councils is an organization that brings together all councils from high schools and middle schools across the state and is a good opportunity for students to grow their leadership skills.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: stuco@gsmst.org</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="https://i.imgur.com/uGnffrJ.png" class="center">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+  <a href="https://www.snapchat.com/add/stucogsmst"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/stucogsmst/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>  
+  </div>
+  <p>Designed by <a>Ill tell you later :)</a></p>
+  <p>© COPYRIGHT 2020</p>
+  <img src="https://i.imgur.com/iCqyVk3.png" class="centercetner">
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+var countDownDate = new Date("Oct 5, 2019 19:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.getElementById("eventtimer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("eventtimer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
 </html>
