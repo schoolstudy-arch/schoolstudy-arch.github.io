@@ -1,0 +1,1 @@
+# schoolstudy-arch.github.io
